@@ -1,0 +1,16 @@
+$NAME
+  fm_trans_cmd
+
+$TYPE
+  state
+
+$CONTENT
+  nothing >> all # do not command an FM state transition
+  run >> all # command FM to initiate nominal running mode autopilot
+  test_mode >> all # command FM to configure modules for test mode
+  stop >> all # command FM to exit nominal running mode
+  calibrate_imu >> all # command FM to run through MPU6000 calibration procedure
+  calibrate_mag >> all # command FM to run through HMC5883L calibration procedure
+  calibrate_pwm >> all # command FM to run through PCA9685 calibration procedure
+  calibrate_esc >> all # command FM to run through ESC calibration procedure
+  exit >> all # exit autopilot

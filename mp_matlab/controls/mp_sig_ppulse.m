@@ -1,0 +1,13 @@
+function [s] = mp_sig_ppulse(t1,t2,t3,t4,t_corner,t)
+
+amp_rising  = mp_sig_parabola(t1,t1+t_corner,t2) ...
+             -mp_sig_parabola(t2-t_corner,t2,t2);
+amp_falling = mp_sig_parabola(t3,t3+t_corner,t4) ...
+             -mp_sig_parabola(t4-t_corner,t4,t4);
+
+s_rising =  mp_sig_parabola(t1,t1+t_corner,t) ...
+           -mp_sig_parabola(t2-t_corner,t2,t);
+s_falling = mp_sig_parabola(t3,t3+t_corner,t) ...
+           -mp_sig_parabola(t4-t_corner,t4,t);
+
+s = s_rising/amp_rising-s_falling/amp_falling;

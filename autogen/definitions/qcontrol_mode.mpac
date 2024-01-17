@@ -1,0 +1,16 @@
+$NAME
+  qcontrol_mode
+
+$TYPE
+  state
+
+$CONTENT
+  safetied >> standby
+  standby >> all
+  torques >> all
+  rates >> all
+  inertial >> all - torques - rates
+  attitude >> all - torques - rates
+  alt >> all - torques - rates
+  pos >> all - torques - rates
+  traj >> all - torques - rates

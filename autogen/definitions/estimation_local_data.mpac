@@ -1,0 +1,13 @@
+$NAME
+  estimation_local_data    
+
+$TYPE
+  packet
+
+$CONTENT
+  gnc::matrix<float,7,1> x # state estimate
+  gnc::matrix<float,3,1> gyro_bias_integral
+  gnc::matrix<float,3,1> previous_mag_vec_meas
+  
+  gnc::matrix<float,6,1> x_kf
+  gnc::matrix<float,6,6> P_kf

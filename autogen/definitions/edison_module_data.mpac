@@ -1,0 +1,11 @@
+$NAME
+  edison_module_data
+
+$TYPE
+  packet
+
+$CONTENT
+  state::edison_state state # module state
+  packet::edison_meas_data meas # module measurement data
+  packet::edison_local_data local # module local data
+  parameter::edison_config_data config # module configuration data

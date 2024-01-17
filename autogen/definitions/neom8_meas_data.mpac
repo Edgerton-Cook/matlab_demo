@@ -1,0 +1,24 @@
+$NAME
+  neom8_meas_data
+
+$TYPE
+  packet
+
+$CONTENT
+  uint32 i_tow_msec # GPS time of week [msec]
+  int32 f_tow_nsec # fractional part of iTOW [nsec]
+  int16 week # GPS week number
+  uint16 gps_fix # GPS fix type
+  uint16 flags # Fix status flags
+  int32 px_ecef_cm # ECEF X coordinate [cm]
+  int32 py_ecef_cm # ECEF Y coordinate [cm]
+  int32 pz_ecef_cm # ECEF Z coordinate [cm]
+  uint32 p_acc_cm # 3D position accuracy estimate [cm]
+  int32 vx_ecef_cmps # ECEF X velocity [cm/s]
+  int32 vy_ecef_cmps # ECEF Y velocity [cm/s]
+  int32 vz_ecef_cmps # ECEF Z velocity [cm/s]
+  uint32 v_acc_cmps # Speed accuracy estimate [cm/s]
+  uint16 p_dop_cm # Position DOP
+  uint16 num_sv # Number of SVs used in navigation solution
+  gnc::matrix<float,3,1> pos_ned # NED position [m]
+  gnc::matrix<float,3,1> vel_ned # NED ground velocity [m]

@@ -1,0 +1,8 @@
+$NAME
+  pca9685_cmd_data
+
+$TYPE
+  packet
+
+$CONTENT
+  gnc::matrix<float,16,1> pwm # vector of commanded PWM pulse widths [usec]

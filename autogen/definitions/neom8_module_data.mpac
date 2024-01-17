@@ -1,0 +1,11 @@
+$NAME
+  neom8_module_data    
+
+$TYPE
+  packet
+
+$CONTENT
+  state::neom8_state state # module state
+  packet::neom8_meas_data meas # module measurement data
+  packet::neom8_local_data local # module local data
+  parameter::neom8_config_data config # module configuration data

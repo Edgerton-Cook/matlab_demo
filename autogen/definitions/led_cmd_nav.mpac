@@ -1,0 +1,10 @@
+$NAME
+  led_cmd_nav
+
+$TYPE
+  packet
+
+$CONTENT
+  float freq # front light blinking frequency [Hz]
+  uint8 global # global amplitude [0,31]
+  uint8 strobe_intensity # strobe light intensity [0,255]

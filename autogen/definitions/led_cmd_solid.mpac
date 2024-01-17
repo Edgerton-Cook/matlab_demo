@@ -1,0 +1,11 @@
+$NAME
+  led_cmd_solid
+
+$TYPE
+  packet
+
+$CONTENT
+  uint8 global # global value [0,31]
+  uint8 red # red value [0,255]
+  uint8 green # green value [0,255]
+  uint8 blue # blue value [0,255]

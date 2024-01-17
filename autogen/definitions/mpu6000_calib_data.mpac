@@ -1,0 +1,9 @@
+$NAME
+  mpu6000_calib_data
+
+$TYPE
+  parameter
+
+$CONTENT
+  gnc::matrix<float,3,1> accl_bias
+  gnc::matrix<float,3,1> gyro_bias

@@ -1,0 +1,11 @@
+$NAME
+  cm_uplink_data
+
+$TYPE
+  packet
+
+$CONTENT
+  packet::mocap_data mocap # uplinked mocap data
+  packet::qcontrol_cmd qcontrol_cmd # uplinked quad control command
+  packet::rcontrol_cmd rcontrol_cmd # uplinked rover control command
+  packet::traj3dof traj3dof # uplinked 3-DoF quad trajectory

@@ -1,0 +1,9 @@
+$NAME
+  power_meas_data
+
+$TYPE
+  packet
+
+$CONTENT
+  float input_voltage # voltage measurement [V]
+  float input_current # current measurement [A]

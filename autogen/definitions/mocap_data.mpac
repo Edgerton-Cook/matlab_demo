@@ -1,0 +1,10 @@
+$NAME
+  mocap_data
+
+$TYPE
+  packet
+
+$CONTENT
+  uint8 rigid_body_id # Rigid-body ID
+  gnc::matrix<float,3,1> pos_ned # Position vector in NED coordinates [m]
+  gnc::quat q_i2b # Inertial-to-body attitude quaternion

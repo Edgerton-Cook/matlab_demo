@@ -1,0 +1,11 @@
+$NAME
+  neom8_state
+
+$TYPE
+  state
+
+$CONTENT
+  idle >> initialize
+  initialize >> active
+  active >> deactivate
+  deactivate >> idle

@@ -1,0 +1,11 @@
+$NAME
+  neom8_local_data
+
+$TYPE
+  packet
+
+$CONTENT
+  gnc::dcm C_ecef2ned # DCM that transforms from the ECEF frame to the NED frame
+  int32 ned_origin_x_ecef_cm # x ECEF coordinate of origin of local NED reference frame [cm]
+  int32 ned_origin_y_ecef_cm # y ECEF coordinate of origin of local NED reference frame [cm]
+  int32 ned_origin_z_ecef_cm # z ECEF coordinate of origin of local NED reference frame [cm]

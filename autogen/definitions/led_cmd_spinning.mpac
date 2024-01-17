@@ -1,0 +1,20 @@
+$NAME
+  led_cmd_spinning
+
+$TYPE
+  packet
+
+$CONTENT
+  float phi_r # red pattern phase [deg]
+  float phi_g # green pattern phase [deg]
+  float phi_b # blue pattern phase [deg]
+  float ft_r # red temporal frequency [Hz]
+  float fs_r # red spatial frequency [1/rev]
+  float ft_g # green temporal frequency [Hz]
+  float fs_g # green spatial frequency [1/rev]
+  float ft_b # blue temporal frequency [Hz]
+  float fs_b # blue spatial frequency [1/rev]
+  uint8 global # global amplitude [0,31]
+  uint8 red # red max amplitude [0,255]
+  uint8 green # green max amplitude [0,255]
+  uint8 blue # blue max amplitude [0,255]

@@ -1,0 +1,10 @@
+$NAME
+  rcontrol_cmd
+  
+$TYPE
+  packet
+
+$CONTENT
+  state::fm_trans_cmd fm_trans_cmd # flight manager transition command
+  state::rcontrol_mode mode # commanded rover control mode
+  gnc::matrix<float,3,1> ch # rover control channel vector [-1,1]

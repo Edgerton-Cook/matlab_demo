@@ -1,0 +1,15 @@
+$NAME
+  fm_local_data
+
+$TYPE
+  packet
+
+$CONTENT
+  uint32 boot_stage
+  uint32 initialize_stage
+  uint32 calibrate_imu_stage
+  uint32 calibrate_mag_stage
+  uint32 calibrate_pwm_stage
+  uint32 calibrate_esc_stage
+  uint32 deactivate_stage
+  uint32 shutdown_stage

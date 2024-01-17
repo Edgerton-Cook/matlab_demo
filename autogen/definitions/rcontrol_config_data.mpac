@@ -1,0 +1,19 @@
+$NAME
+  rcontrol_config_data
+
+$TYPE
+  parameter
+
+$CONTENT
+  float test_mode_base_pwm # [usec]
+  float test_mode_delta_pwm # [usec]
+  float ol_base_pwm # [usec]
+  float ol_delta_pwm # [usec]
+  float cl_base_pwm # [usec]
+  float cl_max_vel # [m/s]
+  float cl_max_ang_rate_dps >> mlt(@,deg2rad) >> cl_max_ang_rate # [deg/s]
+  float cl_kp_pos
+  float cl_kp_hdg
+  float cl_u_vf_sat # fwd velocity command saturation limit [usec]
+  float cl_u_vs_sat # side velocity command saturation limit [usec]
+  float cl_u_vh_sat # hdg velocity command saturation limit [usec]

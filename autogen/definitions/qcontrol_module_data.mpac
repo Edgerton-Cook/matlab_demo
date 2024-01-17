@@ -1,0 +1,12 @@
+$NAME
+  qcontrol_module_data
+
+$TYPE
+  packet
+
+$CONTENT
+  state::qcontrol_state state # module state
+  state::qcontrol_mode mode # control mode
+  packet::qcontrol_sig_data sig # module signal data
+  packet::qcontrol_local_data local # module local data
+  parameter::qcontrol_config_data config # module configuration data

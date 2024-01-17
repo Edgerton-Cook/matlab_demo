@@ -1,0 +1,8 @@
+$NAME
+  rcontrol_local_data
+
+$TYPE
+  packet
+
+$CONTENT
+  gnc::matrix<float,3,1> ref_i # inertial reference position [m] and heading [rad]

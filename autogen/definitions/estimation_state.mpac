@@ -1,0 +1,12 @@
+$NAME
+  estimation_state
+
+$TYPE
+  state
+
+$CONTENT
+  idle >> initialize + passive
+  initialize >> active
+  active >> deactivate
+  passive >> idle
+  deactivate >> idle

@@ -1,0 +1,10 @@
+$NAME
+  max11644eua_module_data
+
+$TYPE
+  packet
+
+$CONTENT
+  state::max11644eua_state state # module state
+  packet::max11644eua_meas_data meas # module measurement data
+  packet::max11644eua_local_data local # module local data

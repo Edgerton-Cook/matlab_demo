@@ -1,0 +1,12 @@
+$NAME
+  mpu6000_module_data    
+
+$TYPE
+  packet
+
+$CONTENT
+  state::mpu6000_state state # module state
+  packet::mpu6000_meas_data meas # module measurement data
+  packet::mpu6000_local_data local # module local data
+  parameter::mpu6000_config_data config # module configuration data
+  parameter::mpu6000_calib_data calib # module calibration data

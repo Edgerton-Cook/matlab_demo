@@ -1,0 +1,9 @@
+$NAME
+  power_calib_data
+
+$TYPE
+  parameter
+
+$CONTENT
+  float voltage_coeff # 8.0f/2.04f
+  float current_coeff # 0.12f/0.057f

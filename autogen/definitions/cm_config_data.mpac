@@ -1,0 +1,23 @@
+$NAME
+  cm_config_data
+
+$TYPE
+  parameter
+
+$CONTENT
+  uint8 master_ip1 # IPv4:IP (part 1) address of master contact (0 = no master defined)
+  uint8 master_ip2 # IPv4:IP (part 2) address of master contact (0 = no master defined)
+  uint8 master_ip3 # IPv4:IP (part 3) address of master contact (0 = no master defined)
+  uint8 master_ip4 # IPv4:IP (part 4) address of master contact (0 = no master defined)
+  uint16 master_port # IPv4:port address of master contact (0 = no master defined)
+  uint32 max_mocap_data_counter # max value of mocap_data counter before shutdown (0 = deactivated)
+  uint32 max_heartbeat_counter # max value of heartbeat counter before shutdown (0 = deactivated)
+  bool guidance_computer_config # (false = no guidance computer, true = guidance computer)
+  parameter::cm_subscriptions default_quad_subs # default quad-rotor downlink subscription rates
+  parameter::cm_subscriptions default_rover_subs # default rover downlink subscription rates
+  
+  uint8 tablet_ip1 # IPv4:IP (part 1) address of tablet contact #DEBUG#
+  uint8 tablet_ip2 # IPv4:IP (part 2) address of tablet contact #DEBUG#
+  uint8 tablet_ip3 # IPv4:IP (part 3) address of tablet contact #DEBUG#
+  uint8 tablet_ip4 # IPv4:IP (part 4) address of tablet contact #DEBUG#
+  uint16 tablet_port # IPv4:port address of tablet contact #DEBUG#

@@ -1,0 +1,15 @@
+$NAME
+  traj3dof
+
+$TYPE
+  packet
+
+$CONTENT
+  uint64 epoch
+  uint32 K
+  bool loop
+  gnc::matrix<float,1,50> time # [s]
+  gnc::matrix<float,3,50> pos_ned # [m]
+  gnc::matrix<float,3,50> vel_ned # [m/s]
+  gnc::matrix<float,3,50> accl_ned # [m/s^2]
+  gnc::matrix<float,1,50> clock_angle # [rad]

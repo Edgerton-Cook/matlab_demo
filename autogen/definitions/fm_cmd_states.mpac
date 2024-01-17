@@ -1,0 +1,19 @@
+$NAME
+  fm_cmd_states
+
+$TYPE
+  packet
+
+$CONTENT
+  state::edison_state edison
+  state::mpu6000_state mpu6000
+  state::hmc5883l_state hmc5883l
+  state::neom8_state neom8
+  state::max11644eua_state max11644eua
+  state::power_state power
+  state::led_state led
+  state::estimation_state estimation
+  state::qcontrol_state qcontrol
+  state::rcontrol_state rcontrol
+  state::sc18is602b_state sc18is602b
+  state::pca9685_state pca9685

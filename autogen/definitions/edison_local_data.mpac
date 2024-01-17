@@ -1,0 +1,8 @@
+$NAME
+  edison_local_data
+
+$TYPE
+  packet
+
+$CONTENT
+  int32 fd # GPIO pin file descriptor for use with PCA9685 calibration

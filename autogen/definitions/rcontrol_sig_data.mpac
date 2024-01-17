@@ -1,0 +1,9 @@
+$NAME
+  rcontrol_sig_data
+
+$TYPE
+  packet
+
+$CONTENT
+  gnc::matrix<float,3,1> u
+  gnc::quat q_i2r

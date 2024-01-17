@@ -1,0 +1,24 @@
+$NAME
+  data_bus
+
+$TYPE
+  bus
+  
+$CONTENT
+  parameter::veh_config_data veh_config_data # vehicle configuration data
+  state::veh_config_state veh_config_state # vehicle configuration state
+  
+  packet::fm_module_data fm
+  packet::edison_module_data edison
+  packet::mpu6000_module_data mpu6000
+  packet::hmc5883l_module_data hmc5883l
+  packet::neom8_module_data neom8
+  packet::max11644eua_module_data max11644eua
+  packet::power_module_data power
+  packet::led_module_data led
+  packet::estimation_module_data estimation
+  packet::qcontrol_module_data qcontrol
+  packet::rcontrol_module_data rcontrol
+  packet::sc18is602b_module_data sc18is602b
+  packet::pca9685_module_data pca9685
+  packet::cm_module_data cm

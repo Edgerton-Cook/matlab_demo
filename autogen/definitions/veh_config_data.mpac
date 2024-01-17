@@ -1,0 +1,9 @@
+$NAME
+  veh_config_data
+
+$TYPE
+  parameter
+
+$CONTENT
+  uint8 number # vehicle number
+  uint8 configuration # vehicle config state (indoor rover = 0, indoor quad = 1, outdoor quad = 2)

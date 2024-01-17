@@ -1,0 +1,16 @@
+$NAME
+  led_state
+
+$TYPE
+  state
+
+$CONTENT
+  idle >> initialize
+  initialize >> all - idle - deactivate
+  active >> all - idle - initialize
+  active_rgb_solid >> all - idle - initialize
+  active_rgb_blinking >> all - idle - initialize
+  active_rgb_spinning >> all - idle - initialize
+  active_rgb_progress >> all - idle - initialize
+  active_rgb_nav >> all - idle - initialize
+  deactivate >> idle

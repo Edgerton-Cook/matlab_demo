@@ -1,0 +1,11 @@
+$NAME
+  hmc5883l_local_data    
+
+$TYPE
+  packet
+
+$CONTENT
+  float inv_scale
+  gnc::dcm C_dev2body
+  bool calibration_complete
+  uint32 i_calib_sample

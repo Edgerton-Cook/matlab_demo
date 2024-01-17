@@ -1,0 +1,17 @@
+$NAME
+  gcs_agent_config_data
+
+$TYPE
+  parameter
+
+$CONTENT
+  float rover_min_battery_voltage # [V]
+  float rover_max_battery_voltage # [V]
+  float quadrotor_min_battery_voltage # [V]
+  float quadrotor_max_battery_voltage # [V]
+  uint32 pix_margin # [pixels]
+  float southwest_pos_n # north-position of SW corner of map [m]
+  float southwest_pos_e # east-position of SW corner of map [m]
+  float northeast_pos_n # north-position of NE corner of map [m]
+  float northeast_pos_e # east-position of NE corner of map [m]
+  bool display_text # show altitude & GPS text [true,false]

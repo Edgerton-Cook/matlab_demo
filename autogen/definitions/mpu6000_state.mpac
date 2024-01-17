@@ -1,0 +1,12 @@
+$NAME
+  mpu6000_state
+
+$TYPE
+  state
+
+$CONTENT
+  idle >> initialize
+  initialize >> active + calibrate
+  active >> deactivate
+  calibrate >> deactivate
+  deactivate >> idle

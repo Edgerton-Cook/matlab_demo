@@ -1,0 +1,11 @@
+$NAME
+  fm_module_data
+
+$TYPE
+  packet
+
+$CONTENT
+  state::fm_state state # module state
+  packet::fm_cmd_data cmd # module command data
+  packet::fm_local_data local # module local data
+  parameter::fm_config_data config # module configuration data

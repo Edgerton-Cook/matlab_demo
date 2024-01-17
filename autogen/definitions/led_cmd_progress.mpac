@@ -1,0 +1,12 @@
+$NAME
+  led_cmd_progress
+
+$TYPE
+  packet
+
+$CONTENT
+  float frac_complete # progress fraction [0.0-1.0]
+  uint8 global # global amplitude [0,31]
+  uint8 red # red max amplitude [0,255]
+  uint8 green # green max amplitude [0,255]
+  uint8 blue # blue max amplitude [0,255]

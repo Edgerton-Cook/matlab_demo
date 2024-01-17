@@ -1,0 +1,10 @@
+$NAME
+  veh_config_state
+
+$TYPE
+  state
+
+$CONTENT
+  indoor_rover >> none # indoor rover configuration (permanent once fm_config_data loaded)
+  indoor_quad >> none # indoor quad-rotor configuration (permanent once fm_config_data loaded)
+  outdoor_quad >> none # outdoor quad-rotor configuration (permanent once fm_config_data loaded)

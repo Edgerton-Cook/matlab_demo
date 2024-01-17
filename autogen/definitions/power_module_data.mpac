@@ -1,0 +1,10 @@
+$NAME
+  power_module_data
+
+$TYPE
+  packet
+
+$CONTENT
+  state::power_state state # module state
+  packet::power_meas_data meas # module measurement data
+  parameter::power_calib_data calib # module calibration data

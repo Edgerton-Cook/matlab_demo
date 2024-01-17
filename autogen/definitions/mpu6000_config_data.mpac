@@ -1,0 +1,16 @@
+$NAME
+  mpu6000_config_data
+
+$TYPE
+  parameter
+
+$CONTENT
+  uint32 spi_bus_speed
+  uint8 dlpf_cfg
+  uint8 sample_rate_div
+  uint8 accl_fs
+  uint8 gyro_fs
+  uint32 n_calib_samples
+  float dev2body_angle_1_deg >> mlt(@,deg2rad) >> dev2body_angle_1
+  float dev2body_angle_2_deg >> mlt(@,deg2rad) >> dev2body_angle_2
+  float dev2body_angle_3_deg >> mlt(@,deg2rad) >> dev2body_angle_3

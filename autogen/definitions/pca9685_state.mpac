@@ -1,0 +1,15 @@
+$NAME
+  pca9685_state
+
+$TYPE
+  state
+
+$CONTENT
+  idle >> initialize
+  initialize >> safe
+  safe >> deactivate + active + min + max + calibrate
+  active >> safe
+  min >> safe
+  max >> safe + min
+  calibrate >> safe
+  deactivate >> idle

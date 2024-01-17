@@ -1,0 +1,14 @@
+$NAME
+  mpu6000_local_data
+
+$TYPE
+  packet
+
+$CONTENT
+  float inv_accl_scale
+  float inv_gyro_scale
+  bool calibration_complete
+  uint32 i_calib_sample
+  gnc::matrix<float,3,1> accl_bias_sum
+  gnc::matrix<float,3,1> gyro_bias_sum
+  gnc::dcm C_dev2body

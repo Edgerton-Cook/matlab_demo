@@ -1,0 +1,13 @@
+$NAME
+  led_cmd_blinking
+
+$TYPE
+  packet
+
+$CONTENT
+  float t # blinking running time [s]
+  float freq # blinking frequency [Hz]
+  uint8 global # global value [0,31]
+  uint8 red # red value [0,255]
+  uint8 green # green value [0,255]
+  uint8 blue # blue value [0,255]

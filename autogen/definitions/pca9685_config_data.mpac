@@ -1,0 +1,16 @@
+$NAME
+  pca9685_config_data
+
+$TYPE
+  parameter
+
+$CONTENT
+  float min_pwm[16] # vector of min allowable pulse-widths [usec]
+  float max_pwm[16] # vector of max allowable pulse-widths [usec]
+  float update_rate # normal operation update rate [Hz]
+  float calib_update_rate # calibration PWM update rate [Hz]
+  uint8 calib_ch # PCA9685 channel used for calibration (use 11 for MP IQ board) [0,15] [usec]
+  uint32 n_calib_samples # number of calibration samples required to complete calibration
+  float nominal_calib_pwm # commanded pulse-width used for calibration [usec]
+  float pwm_dlpf_factor # pulse-width monitoring filter factor (0 = no filter, 1 = no pass)
+  float pwm_meas_outlier_margin # outlier fraction margin (0.0,1.0)

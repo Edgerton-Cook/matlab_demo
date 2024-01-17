@@ -1,0 +1,10 @@
+$NAME
+  ownership_state
+
+$TYPE
+  state
+
+$CONTENT
+  not_owned >> all
+  owned_by_this_gcs >> all
+  owned_by_other_gcs >> all

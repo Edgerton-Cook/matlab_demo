@@ -1,0 +1,14 @@
+$NAME
+  fm_cmd_data
+
+$TYPE
+  packet
+
+$CONTENT
+  bool exit_loop
+  packet::fm_cmd_states states
+  packet::led_cmd_solid led_solid
+  packet::led_cmd_blinking led_blinking
+  packet::led_cmd_spinning led_spinning
+  packet::led_cmd_progress led_progress
+  packet::led_cmd_nav led_nav

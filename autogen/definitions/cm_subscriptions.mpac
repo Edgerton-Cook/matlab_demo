@@ -1,0 +1,10 @@
+$NAME
+  cm_subscriptions
+
+$TYPE
+  parameter
+
+$CONTENT
+  uint16 telemetry_rate # telemetry downlink rate [Hz]
+  uint16 mpu6000_meas_data_rate # mpu6000 measurement data downlink rate [Hz]
+  uint16 pca9685_cmd_data_rate # pca9685 command data downlink rate [Hz]

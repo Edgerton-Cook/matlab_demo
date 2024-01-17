@@ -1,0 +1,13 @@
+$NAME
+  cm_state
+
+$TYPE
+  state
+
+$CONTENT
+  initialize >> disconnected
+  disconnected >> connected + deactivate
+  connected >> disconnected + owned + deactivate
+  owned >> connected + deactivate
+  deactivate >> idle
+  idle >> none

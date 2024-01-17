@@ -1,0 +1,9 @@
+$NAME
+  led_config_data
+
+$TYPE
+  parameter
+
+$CONTENT
+  uint8 ir_led_intensity # IR LED intensity [0,255]
+  bool ir_led_status[12] # IR LED on/off status

@@ -1,0 +1,11 @@
+$NAME
+  sc18is602b_state
+
+$TYPE
+  state
+
+$CONTENT
+  idle >> initialize
+  initialize >> active
+  active >> deactivate
+  deactivate >> idle

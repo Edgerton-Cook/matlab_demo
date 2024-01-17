@@ -1,0 +1,12 @@
+$NAME
+  rcontrol_module_data
+
+$TYPE
+  packet
+
+$CONTENT
+  state::rcontrol_state state # module state
+  state::rcontrol_mode mode # control mode
+  packet::rcontrol_sig_data sig # module signal data
+  packet::rcontrol_local_data local # module local data
+  parameter::rcontrol_config_data config # module configuration data

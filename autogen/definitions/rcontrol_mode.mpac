@@ -1,0 +1,13 @@
+$NAME
+  rcontrol_mode
+
+$TYPE
+  state
+
+$CONTENT
+  safetied >> standby
+  standby >> all
+  test_mode >> all
+  open_loop >> all
+  closed_loop_vel >> all
+  closed_loop_pos >> all

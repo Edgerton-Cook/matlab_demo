@@ -1,0 +1,9 @@
+$NAME
+  filter_gains
+
+$TYPE
+  parameter
+
+$CONTENT
+  gnc::matrix<float,3,1> num
+  gnc::matrix<float,3,1> den

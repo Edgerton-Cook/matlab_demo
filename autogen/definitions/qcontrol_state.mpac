@@ -1,0 +1,11 @@
+$NAME
+  qcontrol_state
+
+$TYPE
+  state
+
+$CONTENT
+  idle >> initialize
+  initialize >> active
+  active >> deactivate
+  deactivate >> idle

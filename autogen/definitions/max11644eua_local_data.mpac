@@ -1,0 +1,8 @@
+$NAME
+  max11644eua_local_data
+
+$TYPE
+  packet
+
+$CONTENT
+  float counts_to_volts

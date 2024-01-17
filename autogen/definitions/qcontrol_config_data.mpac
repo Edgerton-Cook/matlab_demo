@@ -1,0 +1,83 @@
+$NAME
+  qcontrol_config_data
+
+$TYPE
+  parameter
+
+$CONTENT
+  # motor parameters
+  float zero_thrust_pwm # [us]
+  float dpwm_min # minimum delta-PWM [us]
+  float dpwm_max # maximum delta-PWM [us]
+  float a_dpwm2force # dPWM-to-force quadratic coefficient (p^2) [N/us]
+  float b_dpwm2force # dPWM-to-force quadratic coefficient (p^1) [N/us]
+  float c_dpwm2force # dPWM-to-force quadratic coefficient (p^0) [N/us]
+  
+  # allocator parameters
+  float alloc_tol # allocator tolerance
+  float z_guar # z-torque guaranteed prioritization band width [N-m] (<= 0 means disabled)
+  float k_force2torque # force-to-torque conversion # [m]
+  float l_moment_arm # [m]
+  
+  # command parameters
+  float max_cmd_collective # [N]
+  float max_cmd_collective_rate # [N/s]
+  float max_cmd_torque_xy # [N-m]
+  float max_cmd_torque_z # [N-m]
+  float max_cmd_omega_xy_dps >> mlt(@,deg2rad) >> max_cmd_omega_xy # [deg/s]
+  float max_cmd_omega_z_dps >> mlt(@,deg2rad) >> max_cmd_omega_z # [deg/s]
+  float min_cmd_sensed_g # [g's]
+  float max_cmd_sensed_g # [g's]
+  float max_cmd_delta_sensed_g # [g's]
+  float max_cmd_clock_rate_dps >> mlt(@,deg2rad) >> max_cmd_clock_rate # [deg/s]
+  float max_cmd_tilt_deg >> mlt(@,deg2rad) >> max_cmd_tilt # [deg]
+  float max_hvel # maximum horizontal velocity [m/s]
+  float max_vvel # maximum vertical velocity [m/s]
+  float tau_hvel_ref # horizontal velocity command time constant [s]
+  float tau_vvel_ref # vertical velocity command time constant [s]
+  bool body_aligned_att_ctrl_cmd # [true=body-aligned, false=NED-aligned]
+  bool body_aligned_trans_ctrl_cmd # [true=body-aligned, false=NED-aligned]
+  
+  # attitude controller parameters
+  bool enable_att_ctrl_tilt_prioritization # [true=tilt-prioritization enabled, false]
+  float att_ctrl_fb_max_omega_xy_dps >> mlt(@,deg2rad) >> att_ctrl_fb_max_omega_xy # [deg/s]
+  float att_ctrl_fb_max_omega_z_dps >> mlt(@,deg2rad) >> att_ctrl_fb_max_omega_z # [deg/s]
+  float att_prefilt_J_xx # [kg-m^2]
+  float att_prefilt_J_yy # [kg-m^2]
+  float att_prefilt_J_zz # [kg-m^2]
+  float att_prefilt_omega_xy_sat_dps >> mlt(@,deg2rad) >> att_prefilt_omega_xy_sat # [deg/s]
+  float att_prefilt_omega_z_sat_dps >> mlt(@,deg2rad) >> att_prefilt_omega_z_sat # [deg/s]
+  float att_prefilt_tau_xy_sat # [N-m]
+  float att_prefilt_tau_z_sat # [N-m]
+  float att_prefilt_k_p_xy
+  float att_prefilt_k_p_z
+  float att_prefilt_k_d_xy
+  float att_prefilt_k_d_z
+  uint32 att_prefilt_n_steps
+  
+  # translational controller parameters
+  float min_sensed_ver_accl_g >> mlt(@,g0) >> min_sensed_ver_accl # (> 0) [g's]
+  float max_sensed_ver_accl_g >> mlt(@,g0) >> max_sensed_ver_accl # (> 0) [g's]
+  float max_tilt_deg >> mlt(@,deg2rad) >> max_tilt # [deg]
+  float tilt_comp_threshold_deg >> mlt(@,deg2rad) >> tilt_comp_threshold # [deg]
+  
+  # rate controller filters
+  parameter::filter_gains F_tau[3][10]
+  parameter::filter_gains F_xyz[3][15]
+  parameter::filter_gains P_xyz[3][15]
+  parameter::filter_gains C_xyz[3][15]
+  parameter::filter_gains W_xyz[3][20]
+  
+  # collective controller filters
+  parameter::filter_gains F_c[1][15]
+  parameter::filter_gains P_c[1][15]
+  parameter::filter_gains C_c[1][15]
+  parameter::filter_gains W_c[1][20]
+  
+  # attitude controller filters
+  parameter::filter_gains C_att[3][10]
+  
+  # translational control filters
+  parameter::filter_gains C_id_trans[3][15]
+  parameter::filter_gains C_od_trans_pos[3][15]
+  parameter::filter_gains C_od_trans_vel[3][15]

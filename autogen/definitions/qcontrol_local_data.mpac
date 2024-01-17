@@ -1,0 +1,8 @@
+$NAME
+  qcontrol_local_data
+
+$TYPE
+  packet
+
+$CONTENT
+  gnc::matrix<float,4,4> H_f2w # force-to-wrench conversion

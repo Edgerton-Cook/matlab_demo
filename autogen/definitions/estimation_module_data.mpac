@@ -1,0 +1,11 @@
+$NAME
+  estimation_module_data
+
+$TYPE
+  packet
+
+$CONTENT
+  state::estimation_state state # module state
+  packet::estimation_sig_data sig # module signal data
+  packet::estimation_local_data local # module local data
+  parameter::estimation_config_data config # module configuration data

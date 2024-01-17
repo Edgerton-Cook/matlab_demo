@@ -1,0 +1,19 @@
+$NAME
+  qcontrol_sig_data
+
+$TYPE
+  packet
+
+$CONTENT
+  float clock_ref # clock angle reference [rad]
+  gnc::matrix<float,3,1> pos_ref_ned # NED position reference [m]
+  gnc::matrix<float,3,1> vel_ref_ned # NED velocity reference [m/s]
+  gnc::matrix<float,3,1> accl_ref_ned # NED acceleration reference [m/s^2]
+  
+  gnc::quat q_i2r # inertial-to-reference quaternion
+  gnc::matrix<float,3,1> omega_r # reference angular velocity [rad/s]
+  gnc::matrix<float,3,1> tau_r # reference torque [N-m]
+  gnc::matrix<float,4,1> w_req # requested wrench [N,N-m]
+  gnc::matrix<float,4,1> w_alloc # allocated wrench [N,N-m]
+  gnc::matrix<float,4,1> f_alloc # allocated forces [N]
+  gnc::matrix<float,4,1> u # commanded PWMs [us]

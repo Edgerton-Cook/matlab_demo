@@ -1,0 +1,12 @@
+$NAME
+  fm_config_data
+
+$TYPE
+  parameter
+
+$CONTENT
+  float calib_blinking_freq # blinking frequency [Hz]
+  uint8 calib_color_intensity # [0,255]
+  uint32 calib_complete_steps # number of fm steps for blinking LEDs once calibration is complete
+  uint32 esc_green_countdown_steps # number of fm steps for green ESC countdown
+  uint32 esc_red_countdown_steps # number of fm steps for red ESC countdown

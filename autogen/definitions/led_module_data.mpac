@@ -1,0 +1,10 @@
+$NAME
+  led_module_data    
+
+$TYPE
+  packet
+
+$CONTENT
+  state::led_state state # module state
+  packet::led_cmd_data cmd # module command data
+  parameter::led_config_data config # module configuration data

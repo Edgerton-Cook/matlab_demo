@@ -1,0 +1,11 @@
+$NAME
+  cm_local_data
+
+$TYPE
+  packet
+
+$CONTENT
+  bool deactivate # deactivate communication module
+  uint64 master_ipv4 # IPv4 address of master (0 = no master)
+  uint64 current_owner_ipv4 # IPv4 address of current owner (0 = no owner)
+  uint32 mocap_data_counter # mocap_data packet counter

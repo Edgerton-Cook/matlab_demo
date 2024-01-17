@@ -1,0 +1,8 @@
+$NAME
+  pca9685_calib_data
+
+$TYPE
+  parameter
+
+$CONTENT
+  float clock_correction_factor # pca9685 clock correction factor (1 = perfect clock)

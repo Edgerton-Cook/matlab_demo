@@ -1,0 +1,8 @@
+$NAME
+  sc18is602b_config_data
+
+$TYPE
+  parameter
+
+$CONTENT
+  uint8 cs # chip select (MP IQ Board uses cs = 0) [0,1,2,3]

@@ -1,0 +1,10 @@
+$NAME
+  sc18is602b_module_data
+
+$TYPE
+  packet
+
+$CONTENT
+  state::sc18is602b_state state # module state
+  packet::sc18is602b_local_data local # module local data
+  parameter::sc18is602b_config_data config # module configuration data

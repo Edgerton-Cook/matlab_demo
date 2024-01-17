@@ -1,0 +1,9 @@
+$NAME
+  max11644eua_meas_data
+
+$TYPE
+  packet
+
+$CONTENT
+  float ain_0 # channel AIN_0 voltage (configured to measure input voltage on MP IQ board) [V]
+  float ain_1 # channel AIN_1 voltage (configured to measure input current on MP IQ board) [V]

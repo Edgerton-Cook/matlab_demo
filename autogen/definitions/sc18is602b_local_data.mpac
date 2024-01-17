@@ -1,0 +1,8 @@
+$NAME
+  sc18is602b_local_data
+
+$TYPE
+  packet
+
+$CONTENT
+  uint8 active_cs # active chip select [0,1,2,3]

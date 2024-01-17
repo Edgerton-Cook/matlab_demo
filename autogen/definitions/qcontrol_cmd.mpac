@@ -1,0 +1,10 @@
+$NAME
+  qcontrol_cmd
+  
+$TYPE
+  packet
+
+$CONTENT
+  state::fm_trans_cmd fm_trans_cmd # flight manager transition command
+  state::qcontrol_mode mode # commanded quad control mode
+  gnc::matrix<float,4,1> ch # quad control channel vector [-1,1]

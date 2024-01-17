@@ -1,0 +1,10 @@
+$NAME
+  led_cmd_data    
+
+$TYPE
+  packet
+
+$CONTENT
+  uint8 apa102c_buffer[72] # apa102c (RGB LED chip) data buffer
+  uint32 apa102c_n_bytes # number of bytes to be written from apa102c_buffer [0,72]
+  gnc::matrix<float,12,1> ir_led_pwm # IR LED PWM values [0.0,2000.0] [usec]

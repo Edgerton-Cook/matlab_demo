@@ -1,0 +1,8 @@
+$NAME
+  edison_meas_data
+
+$TYPE
+  packet
+
+$CONTENT
+  float measured_pwm # measured pulse-width on time [usec]

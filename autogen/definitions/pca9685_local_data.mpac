@@ -1,0 +1,13 @@
+$NAME
+  pca9685_local_data
+
+$TYPE
+  packet
+
+$CONTENT
+  uint8 mode1_byte
+  uint8 mode2_byte
+  float usec2counts
+  uint16 time_table_usec[16][2]
+  bool calibration_complete
+  uint32 i_calib_sample

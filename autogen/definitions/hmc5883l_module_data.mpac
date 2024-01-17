@@ -1,0 +1,12 @@
+$NAME
+  hmc5883l_module_data    
+
+$TYPE
+  packet
+
+$CONTENT
+  state::hmc5883l_state state # module state
+  packet::hmc5883l_meas_data meas # module measurement data
+  packet::hmc5883l_local_data local # module local data
+  parameter::hmc5883l_config_data config # module configuration data
+  parameter::hmc5883l_calib_data calib # module calibration data

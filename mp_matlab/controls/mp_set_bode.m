@@ -1,0 +1,19 @@
+function [S] = mp_set_bode()
+
+S = struct;
+S.fontsize = 10; % Font Size
+S.f_norm_Hz = 1.0; % Normalization frequency [Hz]
+S.base = 2; % Base (e.g. base-10, base-2)
+S.exp_lb = -6; % Lower-bound of decades, octaves, etc.
+S.exp_ub = 6; % Upper-bound of decades, octaves, etc.
+S.exp_density = 1000; % Number of points in plot
+S.mag_lb = -40; % Magnitude lower-bound [dB]
+S.mag_ub = 40; % Magnitude upper-bound [dB]
+S.mag_delta = 10; % Magnitude tick intervals [dB]
+S.phase_lb = -360; % Phase lower-bound [deg]
+S.phase_ub = 360; % Phase upper-bound [deg]
+S.phase_delta = 90; % Phase tick intervals [deg]
+S.xscale = 'log'; % Frequency scale ('log' or 'linear')
+S.grid = 'on';
+S.mag_plot = true;
+S.phase_plot = true;

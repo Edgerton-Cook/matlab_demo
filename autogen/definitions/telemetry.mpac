@@ -1,0 +1,21 @@
+$NAME
+  telemetry
+
+$TYPE
+  packet
+
+$CONTENT
+  state::veh_config_state veh_config # vehicle configuration state
+  state::ownership_state ownership # vehicle ownership state
+  state::fm_state fm_state # flight manager state
+  state::qcontrol_mode qcontrol_mode # quad-rotor control mode
+  state::rcontrol_mode rcontrol_mode # rover control mode
+  float battery_voltage # battery voltage [V]
+  gnc::quat q_i2b # best estimate of inertial->body attitude
+  gnc::quat q_i2r # commanded inertial->reference attitude
+  gnc::matrix<float,3,1> pos_ned # best estimate of vehicle position (NED) [m]
+  gnc::matrix<float,3,1> pos_ref_ned # commanded position reference (NED) [m]
+  gnc::matrix<float,3,1> vel_ned # velocity NED [m]
+  gnc::matrix<float,3,1> accl_b # bias-corrected accl measurement [m/s^2]
+  uint16 gps_nsv # number of GPS SVs used in navigation solution
+  uint16 gps_fix # GPS fix type

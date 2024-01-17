@@ -1,0 +1,11 @@
+$NAME
+  cm_module_data
+
+$TYPE
+  packet
+
+$CONTENT
+  state::cm_state state # module state
+  packet::cm_uplink_data uplink # module uplink data
+  packet::cm_local_data local # module local data
+  parameter::cm_config_data config # module configuration data

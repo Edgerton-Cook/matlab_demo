@@ -1,0 +1,12 @@
+$NAME
+  estimation_config_data
+
+$TYPE
+  parameter
+
+$CONTENT
+  float beta_grav # Madgwick filter parameter
+  float beta_mag # Madgwick filter parameter
+  float zeta_gyro_bias # Madgwick filter parameter
+  float grav_update_threshold_gs # gravity update threshold [g's]
+  float mag_dec_deg >> mlt(@,deg2rad) >> mag_dec # local magnetic declination angle [deg]

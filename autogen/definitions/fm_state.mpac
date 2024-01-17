@@ -1,0 +1,18 @@
+$NAME
+  fm_state
+
+$TYPE
+  state
+
+$CONTENT
+  boot >> idle
+  idle >> all - active - deactivate
+  initialize >> active
+  active >> deactivate
+  test_mode >> deactivate
+  deactivate >> idle
+  calibrate_imu >> idle
+  calibrate_mag >> idle
+  calibrate_pwm >> idle
+  calibrate_esc >> idle
+  shutdown >> none

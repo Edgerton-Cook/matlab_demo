@@ -1,0 +1,8 @@
+$NAME
+  hmc5883l_meas_data
+
+$TYPE
+  packet
+
+$CONTENT
+  gnc::matrix<float,3,1> mag_vec # local magnetic vector [G]

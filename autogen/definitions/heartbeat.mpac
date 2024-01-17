@@ -1,0 +1,9 @@
+$NAME
+  heartbeat
+
+$TYPE
+  packet
+
+$CONTENT
+  bool request_ownership # (false = not requesting ownership, true = requesting ownership)
+  bool emergency_shutdown # (false = no emergency, true = shutdown)

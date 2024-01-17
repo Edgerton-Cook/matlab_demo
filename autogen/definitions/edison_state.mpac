@@ -1,0 +1,13 @@
+$NAME
+  edison_state
+
+$TYPE
+  state
+
+$CONTENT
+  idle >> initialize
+  initialize >> active + measure
+  active >> deactivate + measure
+  measure >> clean
+  clean >> deactivate + active
+  deactivate >> idle

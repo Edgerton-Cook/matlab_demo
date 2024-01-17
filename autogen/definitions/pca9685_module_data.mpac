@@ -1,0 +1,12 @@
+$NAME
+  pca9685_module_data
+
+$TYPE
+  packet
+
+$CONTENT
+  state::pca9685_state state # module state
+  packet::pca9685_cmd_data cmd # module commanded data
+  packet::pca9685_local_data local # module local data
+  parameter::pca9685_config_data config # module configuration data
+  parameter::pca9685_calib_data calib # module calibration data

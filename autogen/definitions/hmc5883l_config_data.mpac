@@ -1,0 +1,16 @@
+$NAME
+  hmc5883l_config_data
+
+$TYPE
+  parameter
+
+$CONTENT
+  uint8 op_mode # default: 0
+  uint8 avg_samp # default: 3
+  uint8 rate # default: 5
+  uint8 meas_mode # default: 0
+  uint8 fs_mag # default: 1
+  uint32 n_calib_samples
+  float dev2body_angle_1_deg >> mlt(@,deg2rad) >> dev2body_angle_1
+  float dev2body_angle_2_deg >> mlt(@,deg2rad) >> dev2body_angle_2
+  float dev2body_angle_3_deg >> mlt(@,deg2rad) >> dev2body_angle_3

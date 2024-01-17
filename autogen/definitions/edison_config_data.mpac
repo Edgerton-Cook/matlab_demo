@@ -1,0 +1,15 @@
+$NAME
+  edison_config_data
+
+$TYPE
+  parameter
+
+$CONTENT
+  bool altimeter_i2c_en # altimeter I2C comm enabled [true,false]
+  bool i2c_1_en # I2C bus 1 enabled [true,false]
+  bool i2c_2_en # I2C bus 2 enabled [true,false]
+  bool spi_1_en # SPI bus 1 enabled [true,false]
+  bool spi_2_en # SPI bus 2 enabled [true,false]
+  bool uart_en # UART enabled [true,false]
+  uint8 pwm_gpio_ch # GPIO channel for PWM monitoring (1 = GPIO_15 used on MP IQ board) [0,7]
+  uint8 timeout_msec # pulse-width monitoring attempt timeout [msec]

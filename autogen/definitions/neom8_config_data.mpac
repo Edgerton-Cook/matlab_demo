@@ -1,0 +1,10 @@
+$NAME
+  neom8_config_data
+
+$TYPE
+  parameter
+
+$CONTENT
+  double ned_origin_lat_deg >> mlt(@,deg2rad) >> ned_origin_lat # geodetic lat of NED origin [deg]
+  double ned_origin_lon_deg >> mlt(@,deg2rad) >> ned_origin_lon # longitude of NED origin [deg]
+  double ned_origin_alt # geodetic mean sea-level altitude of NED origin [m]
